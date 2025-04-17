@@ -28,4 +28,16 @@ Using sensor data and the pre-computed path (mission_path.txt), the robot naviga
 ```bash
 # Terminal 1: Launch the simulation environment
 ros2 launch cola2_stonefish target_blueboat_alpha_launch.py
+# Terminal 2: Create map
+python3 create_map.py
+# Terminal 2: Path Planning (For example, using A* algorithm)
+python3 astar_planner.py
+# Terminal 2: Navigation
+python3 planner_replan.py
 ```
+
+## Demo videos can be found on YouTube.
+  A*: https://youtu.be/KpTtjEfi-70
+  RRT*: https://youtu.be/cR-bUWz6gMA
+  Q-Learning:https://youtu.be/lFhJiqGW9pQ
+
