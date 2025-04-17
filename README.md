@@ -48,5 +48,5 @@ python3 planner_replan.py
   
   RRT*: https://youtu.be/cR-bUWz6gMA
   
-  Q-Learning:https://youtu.be/lFhJiqGW9pQ
+  Q-Learning: https://youtu.be/lFhJiqGW9pQ
 
