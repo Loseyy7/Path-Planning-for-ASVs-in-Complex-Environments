@@ -16,14 +16,14 @@ The navigation process is divided into the following key stages:
 A grid-based map of the environment is generated using create_map.py.
 
 Output file:
-1. map.pgm – grayscale occupancy grid mapmap.pgm
-2. map.yaml – metadata file describing the map resolution
+1. **map.pgm** – grayscale occupancy grid mapmap.pgm
+2. **map.yaml** – metadata file describing the map resolution
 
 ## 2. Path Planning
 Path planners load the generated map and compute an optimal path from the robot's current position to the specified goal.
 
 Output file:
-mission_path.txt – a list of waypoints representing the planned path
+**mission_path.txt** – a list of waypoints representing the planned path
 
 ## 3. Navigation
 Using sensor data and the pre-computed path (mission_path.txt), the robot navigates through the environment.
