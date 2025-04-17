@@ -43,7 +43,7 @@ python3 astar_planner.py
 python3 planner_replan.py
 ```
 
-## Demo videos can be found on YouTube.
+## Demo videos can be found on YouTube
   A*: https://youtu.be/KpTtjEfi-70
   
   RRT*: https://youtu.be/cR-bUWz6gMA
