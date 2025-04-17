@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<scenario>
+	<environment>
+		<ned latitude="41.7777" longitude="3.0333"/>
+		<ocean />
+		<atmosphere>
+			<sun azimuth="20.0" elevation="50.0"/>
+		</atmosphere>
+	</environment>
+
+	<materials>
+		<material name="Neutral" density="1000.0" restitution="0.5"/>
+		<material name="Rock" density="3000.0" restitution="0.8"/>
+		<material name="Fiberglass" density="1500.0" restitution="0.3"/>
+		<material name="Aluminium" density="2710.0" restitution="0.7"/>
+		<material name="Polyamid" density="1500.0" restitution="0.1"/>
+		<material name="Plastic" density="900.0" restitution="0.4"/>
+
+
+		<friction_table>
+			<friction material1="Neutral" material2="Neutral" static="0.5" dynamic="0.2"/>
+			<friction material1="Neutral" material2="Rock" static="0.2" dynamic="0.1"/>
+			<friction material1="Neutral" material2="Fiberglass" static="0.5" dynamic="0.2"/>
+			<friction material1="Neutral" material2="Aluminium" static="0.5" dynamic="0.2"/>
+			<friction material1="Neutral" material2="Polyamid" static="0.2" dynamic="0.05"/>
+			<friction material1="Rock" material2="Rock" static="0.9" dynamic="0.7"/>
+			<friction material1="Rock" material2="Fiberglass" static="0.6" dynamic="0.4"/>
+			<friction material1="Rock" material2="Aluminium" static="0.6" dynamic="0.3"/>
+			<friction material1="Rock" material2="Polyamid" static="0.4" dynamic="0.2"/>
+			<friction material1="Fiberglass" material2="Fiberglass" static="0.5" dynamic="0.2"/>
+			<friction material1="Fiberglass" material2="Aluminium" static="0.5" dynamic="0.2"/>
+			<friction material1="Fiberglass" material2="Polyamid" static="0.1" dynamic="0.05"/>
+			<friction material1="Aluminium" material2="Aluminium" static="0.8" dynamic="0.5"/>
+			<friction material1="Aluminium" material2="Polyamid" static="0.1" dynamic="0.05"/>
+			<friction material1="Polyamid" material2="Polyamid" static="0.1" dynamic="0.05"/>
+			<friction material1="Plastic" material2="Neutral" static="0.99" dynamic="0.99"/>
+			<friction material1="Plastic" material2="Rock" static="0.4" dynamic="0.2"/>
+			<friction material1="Plastic" material2="Fiberglass" static="0.5" dynamic="0.3"/>
+			<friction material1="Plastic" material2="Aluminium" static="0.5" dynamic="0.3"/>
+			<friction material1="Plastic" material2="Polyamid" static="0.99" dynamic="0.99"/>
+			<friction material1="Plastic" material2="Plastic" static="0.99" dynamic="0.99"/>
+
+		</friction_table>
+	</materials>
+
+	<looks>
+		<look name="tank" rgb="0.9 0.9 0.9" roughness="0.9"/>
+		<look name="cylinder" gray="1.0" roughness="0.9" />
+		<look name="tri_p" gray="1.0" roughness="0.9" />
+		<look name="White" rgb="64 128 64" roughness="0.5"/>
+	</looks>
+	
+
+
+	<static name="Obstacle40" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="0.0 4.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle41" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="1.0 4.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle42" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="2.0 4.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle43" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="3.0 4.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle33" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="3.0 3.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<!-- <static name="Obstacle35" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="5.0 3.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static> -->
+
+	<static name="Obstacle53" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="3.0 5.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle63" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="3.0 6.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+
+	<static name="Obstacle82" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="2.0 8.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle83" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="3.0 8.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle84" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="4.0 8.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle85" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="5.0 8.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle05" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="5.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle15" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="5.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle55" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="5.0 5.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle65" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="5.0 6.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<!-- <static name="Obstacle34" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="4.0 3.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static> -->
+
+	<static name="Obstacle56" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="6.0 5.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+
+	<static name="Obstacle17" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="7.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle27" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="7.0 2.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle37" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="7.0 3.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle57" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="7.0 5.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle67" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="7.0 6.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle77" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="7.0 7.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+	<static name="Obstacle87" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="7.0 8.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+
+
+    <static name="Obstacle11" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="1.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+    
+    <static name="Obstacle21" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="1.0 2.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+    <static name="Obstacle61" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="1.0 6.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+    
+    <static name="Obstacle71" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="1.0 7.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+    
+    <static name="Obstacle81" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="1.0 8.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+    <static name="Obstacle12" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="2.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+    <!-- <static name="Obstacle13" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="3.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static> -->
+	
+
+    <static name="Obstacle18" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="8.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+
+    <static name="Obstacle88" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="8.0 8.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+
+    <static name="Obstacle39" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="9.0 3.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+    <static name="Obstacle49" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="9.0 4.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+    <static name="Obstacle59" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="9.0 5.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+    <static name="Obstacle69" type="box" physics="submerged" buoyant="true">
+        <dimensions xyz="1.0 1.0 1.0"/>
+        <origin xyz="9.0 6.0 0.0" rpy="0.0 0.0 0.0"/>
+        <material name="Rock"/>
+        <look name="Gray"/>
+		<world_transform xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </static>
+
+
+
+	<include file="$(find cola2_stonefish)/scenarios/blueboat.scn">
+		<arg name="position" value="0.0 0.0 1.0"/>
+	</include>
+</scenario>
